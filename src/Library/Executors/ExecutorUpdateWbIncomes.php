@@ -10,6 +10,6 @@ class ExecutorUpdateWbIncomes implements ExecutorInterface
 {
     public static function run(): void
     {
-        Incomes::getIncomes(config('wb')['date']['incomes']['change'],'Astapovm\Wb\Library\Incomes\IncomeRepository::storeOrUpdateSeveral');
+        Incomes::getIncomes(config('wb_package')['date']['incomes']['change'],'Astapovm\Wb\Library\Incomes\IncomeRepository::storeOrUpdateSeveral');
     }
 }

@@ -9,6 +9,6 @@ class ExecutorUpdateWbOrders implements ExecutorInterface
 {
     public static function run(): void
     {
-        Orders::getOrders(config('wb')['date']['orders']['change'],0,'Astapovm\Wb\Library\Orders\OrderRepository::storeOrUpdateSeveral');
+        Orders::getOrders(config('wb_package')['date']['orders']['change'],0,'Astapovm\Wb\Library\Orders\OrderRepository::storeOrUpdateSeveral');
     }
 }

@@ -9,6 +9,6 @@ class ExecutorUpdateWbSales implements ExecutorInterface
 {
     public static function run(): void
     {
-        Sales::getSales(config('wb')['date']['sales']['change'], 0 ,'Astapovm\Wb\Library\Sales\SaleRepository::storeOrUpdateSeveral');
+        Sales::getSales(config('wb_package')['date']['sales']['change'], 0 ,'Astapovm\Wb\Library\Sales\SaleRepository::storeOrUpdateSeveral');
     }
 }
