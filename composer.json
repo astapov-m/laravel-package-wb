@@ -1,0 +1,32 @@
+{
+    "name": "astapov-m/wb",
+    "description": "wb SDK PHP-client",
+    "version": "1.1",
+    "keywords": [
+        "wb", "api", "packege", "client", "php"
+    ],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mikhail astapov",
+            "email": "astapm115@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "astapov-m/wb-sdk": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Astapovm\\Wb\\" : "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Astapovm\\Wb\\Providers\\WbServiceProvider"
+            ]
+        }
+    }
+}
