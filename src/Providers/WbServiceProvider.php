@@ -29,7 +29,7 @@ class WbServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->publishes([
-            __DIR__.'/../config/wb.php' => config_path('wb.php'),
+            __DIR__ . '/../config/wb_package.php' => config_path('wb.php'),
         ]);
         if ($this->app->runningInConsole()) {
             $this->commands([
