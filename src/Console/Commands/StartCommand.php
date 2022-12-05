@@ -12,7 +12,7 @@ class StartCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'command:start';
 
     /**
      * The console command description.

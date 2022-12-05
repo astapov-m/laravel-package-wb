@@ -12,7 +12,7 @@ class UpdateWbSalesCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'command:updateWbSales';
 
     /**
      * The console command description.
