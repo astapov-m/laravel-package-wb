@@ -7,6 +7,8 @@ use Astapovm\Wb\Console\Commands\UpdateWbOrdersCommand;
 use Astapovm\Wb\Console\Commands\UpdateWbSalesCommand;
 use Astapovm\Wb\Console\Commands\UpdateWbStocksCommand;
 use Illuminate\Support\ServiceProvider;
+use Wb\Config\WbConfigSdk;
+use Wb\Library\Wb;
 
 class WbServiceProvider extends ServiceProvider
 {
@@ -17,7 +19,15 @@ class WbServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(Wb::class, function ($app) {
+            return new Wb($app->make(WbConfigSdk::class));
+        });
+
+        $this->app->bind(WbConfigSdk::class, function () {
+            return new WbConfigSdk(env('WB_API_KEY'));
+        });
+
+        $this->app->make(Wb::class);
     }
 
     /**
