@@ -42,7 +42,7 @@ class WbServiceProvider extends ServiceProvider
         ], 'wb_v1-migrations');
 
         $this->publishes([
-            __DIR__.'/../Models/' => base_path('app/Models/WbFbo')]);
+            __DIR__.'/../Models/' => base_path('app/Models/Fbo')]);
 
         $this->publishes([
             __DIR__ . '/../config/wb_package.php' => config_path('wb_package.php'),
