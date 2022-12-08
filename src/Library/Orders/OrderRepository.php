@@ -4,7 +4,7 @@ namespace Astapovm\Wb\Library\Orders;
 
 use Astapovm\Wb\Library\Interfaces\RepositoryInterface;
 use Astapovm\Wb\Library\Traits\RepositoryTrait;
-use Astapovm\Wb\Models\WbOrder;
+use App\Models\Fbo\WbOrder;
 
 class OrderRepository implements RepositoryInterface
 {

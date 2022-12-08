@@ -40,6 +40,10 @@ class WbServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../database/migrations/' => database_path('migrations')
         ], 'wb_v1-migrations');
+
+        $this->publishes([
+            __DIR__.'/../Models/' => base_path('app/Models/WbFbo')]);
+
         $this->publishes([
             __DIR__ . '/../config/wb_package.php' => config_path('wb_package.php'),
         ]);

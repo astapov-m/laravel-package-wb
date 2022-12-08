@@ -4,8 +4,7 @@ namespace Astapovm\Wb\Library\Stocks;
 
 use Astapovm\Wb\Library\Interfaces\RepositoryInterface;
 use Astapovm\Wb\Library\Traits\RepositoryTrait;
-use Astapovm\Wb\Models\WbOrder;
-use Astapovm\Wb\Models\WbStock;
+use App\Models\Fbo\WbStock;
 
 class StockRepository implements RepositoryInterface
 {

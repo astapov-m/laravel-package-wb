@@ -4,7 +4,7 @@ namespace Astapovm\Wb\Library\Sales;
 
 use Astapovm\Wb\Library\Interfaces\RepositoryInterface;
 use Astapovm\Wb\Library\Traits\RepositoryTrait;
-use Astapovm\Wb\Models\WbSale;
+use App\Models\Fbo\WbSale;
 
 class SaleRepository implements RepositoryInterface
 {

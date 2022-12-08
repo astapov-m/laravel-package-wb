@@ -1,6 +1,6 @@
 <?php
 
-namespace Astapovm\Wb\Models;
+namespace App\Models\Fbo;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

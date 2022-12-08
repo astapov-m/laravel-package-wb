@@ -4,7 +4,7 @@ namespace Astapovm\Wb\Library\Incomes;
 
 use Astapovm\Wb\Library\Interfaces\RepositoryInterface;
 use Astapovm\Wb\Library\Traits\RepositoryTrait;
-use Astapovm\Wb\Models\WbIncome;
+use App\Models\Fbo\WbIncome;
 
 class IncomeRepository implements RepositoryInterface
 {
