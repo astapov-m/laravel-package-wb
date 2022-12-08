@@ -9,6 +9,6 @@ class ExecutorUpdateWbStocks implements ExecutorInterface
 {
     public static function run(): void
     {
-        Stocks::getStocks(date('Y-m-d',time()), 'Astapovm\Wb\Library\Stocks\StockRepository::storeOrUpdateSeveral');
+        Stocks::getStocks(config('wb_package')['date']['stocks']['change'], 'Astapovm\Wb\Library\Stocks\StockRepository::storeOrUpdateSeveral');
     }
 }

@@ -10,6 +10,9 @@ return[
       ],
       'incomes' => [
           'change' => date('Y-m-d', strtotime(date('Y-m-d',time()).' - 1 months')),
+      ],
+      'stocks' => [
+          'change' => date('Y-m-d', strtotime(date('Y-m-d',time()).' - 1 day')),
       ]
   ]
 ];
