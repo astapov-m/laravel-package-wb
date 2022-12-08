@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('wb_incomes', function (Blueprint $table) {
+        Schema::create('wildberries_fbo_incomes', function (Blueprint $table) {
             $table->id();
             $table->integer('incomeId');
             $table->string('number');
@@ -39,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('wb_incomes');
+        Schema::dropIfExists('wildberries_fbo_incomes');
     }
 };

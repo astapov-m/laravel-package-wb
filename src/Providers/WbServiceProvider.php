@@ -37,7 +37,9 @@ class WbServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'wb_v1-migrations');
         $this->publishes([
             __DIR__ . '/../config/wb_package.php' => config_path('wb_package.php'),
         ]);

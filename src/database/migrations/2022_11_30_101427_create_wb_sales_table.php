@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('wb_sales', function (Blueprint $table) {
+        Schema::create('wildberries_fbo_sales', function (Blueprint $table) {
             $table->id();
             $table->dateTime('date');
             $table->dateTime('lastChangeDate');
@@ -54,6 +54,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('wb_sales');
+        Schema::dropIfExists('wildberries_fbo_sales');
     }
 };

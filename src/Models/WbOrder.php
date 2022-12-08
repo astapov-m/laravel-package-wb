@@ -9,4 +9,5 @@ class WbOrder extends Model
 {
     use HasFactory;
     protected $guarded = [];
+    protected $table = 'wildberries_fbo_orders';
 }
