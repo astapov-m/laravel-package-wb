@@ -2,6 +2,7 @@
 
 namespace Astapovm\Wb\Providers;
 
+use Astapovm\Wb\Console\Commands\StartCommand;
 use Astapovm\Wb\Console\Commands\UpdateWbIncomesCommand;
 use Astapovm\Wb\Console\Commands\UpdateWbOrdersCommand;
 use Astapovm\Wb\Console\Commands\UpdateWbSalesCommand;
@@ -53,6 +54,7 @@ class WbServiceProvider extends ServiceProvider
                 UpdateWbOrdersCommand::class,
                 UpdateWbStocksCommand::class,
                 UpdateWbSalesCommand::class,
+                StartCommand::class
             ]);
         }
     }
